@@ -1,21 +1,17 @@
+{% load render_bundle from webpack_loader %}
 {% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static "css/temp.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <title>WWSIA</title>
 </head>
 <body>
-    <div class="container">
-        <div class="text-container">
-            <h1>WWSIA coming soon</h1>
-            <div class="container-background">
-
-            </div>
-        </div>
+    <div id="container">
     </div>
+{% render_bundle 'main' %}
 </body>
 </html>

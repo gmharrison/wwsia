@@ -1,0 +1,20 @@
+@import "modules/_variables.scss";
+
+@import "components/headers.scss";
+@import "components/_containers.scss";
+@import "components/_menu.scss";
+
+body {
+  background-color: #efe6e7;
+  font-family: 'Athelas', serif;
+  color: $dark-gray;
+  height: 100vh;
+}
+
+a {
+  color: $dark-gray;
+
+  &:hover {
+    color: $dark-gray;
+  }
+}

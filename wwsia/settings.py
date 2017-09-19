@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wwsia',
+    'webpack_loader',
     'storages'
 ]
 
@@ -161,9 +162,9 @@ if DEBUG:
         os.path.join(BASE_DIR, 'wwsia/static'),
     )
 
-    # WEBPACK_LOADER = {
-    #     'DEFAULT': {
-    #         'BUNDLE_DIR_NAME': 'webpack_bundles/',
-    #         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
-    #     }
-    # }
+    WEBPACK_LOADER = {
+        'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'webpack_bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+        }
+    }

@@ -1,0 +1,76 @@
+.home-container {
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  height: 100%; }
+
+.intro-container {
+  width: 300px;
+  flex: 0 0 auto;
+  margin-right: 30px; }
+
+.about-text-container {
+  margin-top: 50px; }
+
+.gallery-container {
+  flex: 0 0 auto;
+  position: relative; }
+
+.artist-container {
+  margin: 0 15px;
+  width: 200px;
+  display: inline-block; }
+
+.frame {
+  border: 1px solid #514f4f; }
+  .frame.one {
+    width: 200px;
+    height: 190px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    z-index: 1; }
+    .frame.one + .image-container {
+      height: 200px;
+      width: 200px;
+      background: white;
+      position: absolute;
+      top: 90px; }
+  .frame.two {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 300px; }
+  .frame.three {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 50px; }
+  .frame.four {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 100px; }
+
+.nav-list {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+.nav-link {
+  display: inline-block;
+  list-style: none;
+  width: 25%;
+  text-align: center; }
+
+body {
+  background-color: #efe6e7;
+  font-family: 'Athelas', serif;
+  color: #514f4f;
+  height: 100vh; }
+
+a {
+  color: #514f4f; }
+  a:hover {
+    color: #514f4f; }
